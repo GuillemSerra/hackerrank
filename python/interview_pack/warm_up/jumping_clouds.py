@@ -14,7 +14,7 @@ def jumping_on_clouds(clouds: List[int]) -> int:
     while position < max_position:
         if (position + 2) <= max_position and clouds[position + 2] == HAPPY_CLOUD:
             position += 2
-        elif clouds[position + 1] == HAPPY_CLOUD:
+        else:
             position += 1
 
         counter_jumps += 1
